@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Perfiles GitHub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <h1>Buscador de Perfiles GitHub</h1>
+        <button id="logout-btn" class="logout-btn" style="display: none;">
+          Cerrar Sesión
+        </button>
+      </div>
+      
+      <form class="user-form" id="form">
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Ingresa hasta 4 usuarios separados por comas...">
+          <button type="submit" id="search-btn">Buscar</button>
+        </div>
+        <p class="help-text">Ejemplo: octocat, facebook, google, microsoft</p>
+      </form>
+    </header>
+
+    <main id="main">
+      <div class="profiles-grid" id="profiles-grid">
+        <!-- Las tarjetas se generarán aquí -->
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" 
+    integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" 
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

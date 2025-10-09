@@ -138,6 +138,68 @@ label {
     border-color: #27ae60;
 }
 
+/* Botón de cerrar sesión */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(135deg, #ee5a52 0%, #ff6b6b 100%);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
+/* Estado de login */
+.login-status {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.user-welcome {
+  color: #64b3f4;
+  font-weight: 600;
+}
+
+/* Responsive para el header */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-top h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     .login-container {
