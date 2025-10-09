@@ -2,7 +2,7 @@
 // test.php
 echo "<h1>🔧 TEST DEL SISTEMA</h1>";
 
-// Probar conexión a BD
+// Probar conexión a BD2
 try {
     require_once 'src/db_connect.php';
     echo "<p style='color: green;'>✅ Conexión a MySQL exitosa</p>";
